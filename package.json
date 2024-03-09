@@ -2,16 +2,20 @@
   "name": "meta-genrative-ai-api",
   "version": "1.0.0",
   "description": "This api will provide clients the ability to create request to meta's generative ai models (including llama-2) and store the responses in a NoSQL database",
-  "main": "index.js",
-  "type": "module",
+  "main": "app.js",
+  "private": true,
   "scripts": {
-	"start": "nodemon index.js",
+	"start": "nodemon app.js",
     "test": "npm test"
   },
-  "author": "Chidi Nwaka",
+  "author": "Chidi qNwaka",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
   },
   "devDependencies": {
     "dotenv": "^16.4.5",
